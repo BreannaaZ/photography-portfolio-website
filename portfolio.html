@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- The following meta lines help to make the website responsive - so the website is properly scaled amongst different devices. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roy Zinky Photography</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link rel="stylesheet" href="style.css">
+    <!-- if the previous line does not work try to use <link href="/style.css" rel="stylesheet" type="text/css" media="all"> -->
+    
+    <!-- for google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Akshar:wght@600&display=swap">
+    
+    <!-- for awesome font logos -->
+    <script src="https://use.fontawesome.com/23ae4c78b2.js"></script>
+    
+    <!-- share button -->
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=64dfc59c4265f4001221c8c2&product=inline-share-buttons' async='async'></script>    
+    
+  </head>
+  <body>
+  <!-- ******************* PRELOADER ANIMATION ******************* -->
+  
+  <!-- <div id="preloader"></div> -->
+  
+  <!-- ******************* HEADER ******************* -->
+      <section class="alt-header">
+        <!-- Nav tag defines a set of navigation links, which we can use for the tabs -->
+        <nav>
+          <!-- We will create a div class for all the tab links so we can link them all to a CSS style called tab-links -->
+          <div class="tab-links" id="tabLinks">
+            <!-- closing icon for small screen tabs, with a call to function closeMenu for click event  -->
+            <i class="fa fa-times" onclick="closeMenu()"></i>
+            <!-- ul tag is for an unordered bulleted list, adding <li> tag gives just an unordered list -->
+            <ul>
+              <li><a href="https://royzinkyphotography.neocities.org/">HOME</a></li>
+              <li><a href="https://royzinkyphotography.neocities.org/portfolio">PORTFOLIO</a></li>
+              <li><a href="https://royzinkyphotography.neocities.org/about">ABOUT</a></li>
+              <li><a href="https://royzinkyphotography.neocities.org/contact">CONTACT</a></li>
+            </ul>
+          </div>
+            <!-- opening menu icon for small screen tabs, with a call to function openMenu for click event -->
+            <i class="fa fa-bars" onclick="openMenu()"></i>
+        </nav>
+      
+        <div class="main-header-text">
+          <h1>ROY ZINKY PHOTOGRAPHY</h1>
+          <p>framing artistry in the wild</p>
+        </div>
+      
+      </section>
+    
+    <!-- ******************* PORTFOLIO IMAGES SECTION ******************* -->
+    
+    <section class="portfolio-section">
+    
+    <h1>MY PORTFOLIO</h1>
+        
+      <div class="portfolio-buttons">
+        <ul>
+          <li onclick="showAll(); bold()"><span id="allButton" style="font-weight: bolder; text-decoration: underline;">ALL</span></li>
+          <li><span style="margin-left: 25px; margin-right: 25px;">/</span></li>
+          <li onclick="showWildlife(); bold()"><span>WILDLIFE</span></li>
+          <li><span style="margin-left: 25px; margin-right: 25px;">/</span></li>
+          <li onclick="showLandscape(); bold()"><span>LANDSCAPE</span></li>
+          <li><span style="margin-left: 25px; margin-right: 25px;">/</span></li>
+          <li onclick="showArchitectural(); bold()"><span>ARCHITECTURAL</span></li>
+          <li><span style="margin-left: 25px; margin-right: 25px;">/</span></li>
+          <li onclick="showMacro(); bold()"><span>MACRO</span></li>
+        </ul>
+      </div>
+      
+      <div class="fullscreen-images" id="fullscreenImageBox">
+      <div class="imgAndArrowsContainer">
+        <!-- Left slider icon for enlarged images -->
+        <i id="leftSlider" class="fa fa-chevron-left" onclick="previousImg()"></i>
+          <img src="pictures/portfolio/wildlife/wildlife1.jpg" id="fullscreenImage">
+        <!-- Right slider icon for enlarged images -->
+        <i id="rightSlider" class="fa fa-chevron-right" onclick="nextImg()"></i>
+      </div>
+        <!-- closing icon for enlarged images  -->
+        <!-- <i class="fa fa-times" onclick="closeFullImg()"></i> -->
+      </div>
+      
+<div class="portfolio-images">
+        <img src="pictures/portfolio/wildlife/wildlife1.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/wildlife/wildlife2.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        <img src="pictures/portfolio/wildlife/wildlife3.jpg" onclick="openFullImg(this.src);">
+        
+        <img src="pictures/portfolio/wildlife/wildlife4.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        <img src="pictures/portfolio/wildlife/wildlife5.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/wildlife/wildlife6.jpg" onclick="openFullImg(this.src);">
+        
+        <img src="pictures/portfolio/wildlife/wildlife7.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        <img src="pictures/portfolio/wildlife/wildlife8.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/wildlife/wildlife9.jpg" onclick="openFullImg(this.src);">
+        
+        <img src="pictures/portfolio/wildlife/wildlife10.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/wildlife/wildlife11.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/wildlife/wildlife12.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        
+        <img src="pictures/portfolio/wildlife/wildlife13.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/wildlife/wildlife14.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        <img src="pictures/portfolio/wildlife/wildlife15.jpg" onclick="openFullImg(this.src);">
+        
+        <img src="pictures/portfolio/wildlife/wildlife16.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        <img src="pictures/portfolio/wildlife/wildlife17.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        
+        <img src="pictures/portfolio/wildlife/wildlife18.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        <img src="pictures/portfolio/wildlife/wildlife19.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/wildlife/wildlife20.jpg" onclick="openFullImg(this.src);">
+        
+        <img src="pictures/portfolio/wildlife/wildlife21.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        <img src="pictures/portfolio/wildlife/wildlife22.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        
+        <img src="pictures/portfolio/wildlife/wildlife23.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        <img src="pictures/portfolio/wildlife/wildlife24.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        
+        <img src="pictures/portfolio/wildlife/wildlife25.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/wildlife/wildlife26.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/wildlife/wildlife27.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/wildlife/wildlife28.jpg" onclick="openFullImg(this.src);">
+        
+        <img src="pictures/portfolio/wildlife/wildlife29.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/wildlife/wildlife30.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/wildlife/wildlife31.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/wildlife/wildlife32.jpg" onclick="openFullImg(this.src);">
+
+        
+        <img src="pictures/portfolio/landscape/landscape1.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/landscape/landscape2.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/landscape/landscape3.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        
+        <img src="pictures/portfolio/landscape/landscape4.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/landscape/landscape5.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        <img src="pictures/portfolio/landscape/landscape6.jpg" onclick="openFullImg(this.src);">
+        
+        <img src="pictures/portfolio/landscape/landscape7.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        <img src="pictures/portfolio/landscape/landscape8.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/landscape/landscape9.jpg" onclick="openFullImg(this.src);">
+        
+        <img src="pictures/portfolio/landscape/landscape10.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/landscape/landscape11.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/landscape/landscape12.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        
+        <img src="pictures/portfolio/landscape/landscape13.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/landscape/landscape14.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/landscape/landscape15.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/landscape/landscape16.jpg" onclick="openFullImg(this.src);">
+        
+        <img src="pictures/portfolio/landscape/landscape17.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        <img src="pictures/portfolio/landscape/landscape18.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        
+        <img src="pictures/portfolio/landscape/landscape19.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/landscape/landscape20.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/landscape/landscape21.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        
+        <img src="pictures/portfolio/landscape/landscape22.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        <img src="pictures/portfolio/landscape/landscape23.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        
+        
+        
+        <img src="pictures/portfolio/architectural/architectural1.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/architectural/architectural2.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/architectural/architectural3.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        
+        <img src="pictures/portfolio/architectural/architectural4.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        <img src="pictures/portfolio/architectural/architectural5.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+        
+        <img src="pictures/portfolio/architectural/architectural6.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/architectural/architectural7.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/architectural/architectural8.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/architectural/architectural9.jpg" onclick="openFullImg(this.src);">
+        
+        <img src="pictures/portfolio/architectural/architectural10.jpg" onclick="openFullImg(this.src); ">
+        
+        <img src="pictures/portfolio/macro/macro1.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/macro/macro2.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/macro/macro3.jpg" onclick="openFullImg(this.src);">
+        <img src="pictures/portfolio/macro/macro4.jpg" onclick="openFullImg(this.src);">
+                
+        <img src="pictures/portfolio/macro/macro5.jpg" onclick="openFullImg(this.src);" class="wide-pic">
+
+        
+      </div>
+
+    </section>
+    
+  <!-- ******************* FOOTER ******************* -->
+     <section class="footer">
+     
+     
+     <div class="footer-top">
+      <h1>ROY ZINKY</h1>
+      <h2><i class="fa fa-minus"></i></h2>
+      <p>WILDLIFE PHOTOGRAPHER</p>
+      <hr>
+     </div>
+     
+     
+     <div class="social-header">
+        <h1>CHECK OUT MY SOCIALS</h1>
+      </div>
+     
+     <div class="socials">
+        <ul>
+          <li><a href="https://www.instagram.com/itsroyzinky/"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.youtube.com/@ItsRoyZinky"><i class="fa fa-youtube-play"></i></a> </li>
+          <li><div class="st-custom-button" data-network="sharethis"><i class="fa fa-share-alt-square"></i></div></li>
+        </ul>
+     </div>
+
+     <div class="footer-bottom">
+      <p>2023 <br /> Website designed and coded by Breanna Zinky <br /> using HTML, CSS, and JavaScript</p>
+     </div>
+     
+     </section>
+    
+    
+    <!-- ******************* JAVA SCRIPT ******************* -->
+    <!-- Java script section for Tabs Menu -->
+    <script>
+    // create variable for tab links
+      var tabLinks = document.getElementById("tabLinks");
+      
+      // Sets the position of the menu to normal so it is shown
+     function openMenu(){
+        tabLinks.style.right = "0";
+        }
+      // Sets the position of the menu to off the screen so it is hidden
+      function closeMenu(){
+        tabLinks.style.right = "-200px";
+        }
+    </script>
+        
+      <!-- Java script section for Header Transition (shrinking) -->
+    <script>
+      // Event takes place after the website is fully loaded
+      document.addEventListener("DOMContentLoaded", function() {
+      // Create a variable (reference to) the header HTML element
+      var altHeader = document.querySelector(".alt-header");
+      // setTimeout function delays the event
+      setTimeout(function() {
+      // Adds the "shorter" class to the altHeader element, which will have changed properties, so the header changes
+      altHeader.classList.add("shorter");
+      }, 1500); // Delay time of 1500 miliseconds
+      });
+    </script>
+    
+    <!-- Java script section for Image Gallery (opening and closing images) -->
+    <script>
+    
+    var fullscreenImageBox = document.getElementById("fullscreenImageBox");
+    // We need these two separate variables because this second one will be used to identify which image in particular will be fullscreened
+    var fullscreenImage = document.getElementById("fullscreenImage");
+    var fullscreened = false;
+    const leftSlider = document.getElementById("leftSlider");
+    const rightSlider = document.getElementById("rightSlider");
+    
+    // Variables for the distinct gallery sections (wildlife, landscape, etc...)
+      const allGallery = document.querySelectorAll(".portfolio-images img");
+      const wildlifeGallery = document.querySelectorAll(".portfolio-images img:nth-child(n+1):nth-child(-n+32)");
+      const landscapeGallery = document.querySelectorAll(".portfolio-images img:nth-child(n+33):nth-child(-n+55)");
+      const architecturalGallery = document.querySelectorAll(".portfolio-images img:nth-child(n+56):nth-child(-n+65)");
+      const macroGallery = document.querySelectorAll(".portfolio-images img:nth-child(n+66):nth-child(-n+70)");
+      const allButton = document.getElementById("allButton");
+
+
+    function openFullImg(selectedPic){
+      fullscreenImageBox.style.display = "flex";
+      fullscreenImage.src = selectedPic;
+      fullscreened = true;
+      console.log(fullscreened);
+    }
+      
+    function closeFullImg(){
+      fullscreenImageBox.style.display = "none";
+      fullscreened = false;
+      console.log(fullscreened);
+    }
+    
+    // CHANGE THE IMAGE WITH ARROW KEYS: Watch for arrow event
+      document.onkeydown = function(event){
+       // Check that an image is being fullscreened
+       if (fullscreened){
+         switch (event.keyCode) {
+            case 37:
+               previousImg();
+            break;
+            case 39:
+               nextImg();
+            break;
+         }
+       }
+      };
+    
+    // Functions for arrow sliders
+    function nextImg(){
+      // Find the current opened image and it's SRC - fullscreenImage which is already declared when the image is first clicked
+      // Check if the image type is wildlife, landscape, architectural, or macro
+      let srcText = fullscreenImage.src;
+      // Find the number index from the src, which will be the picture number
+      // Use regular expressions to find all the digits in the string. The return here is an "object".
+      let srcIndexArray = srcText.match(/\d+/);
+      // Now convert this "object" to a number
+      let srcIndex = parseInt(srcIndexArray);
+      if (srcText.startsWith("https://royzinkyphotography.neocities.org/pictures/portfolio/wildlife/wildlife")){
+        // First, if the ALL section is being displayed then cycle past wildlife to the next section, landscape
+        if ((allButton.style.fontWeight === "bolder") && (srcIndex === 32)){ ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+           openFullImg("https://royzinkyphotography.neocities.org/pictures/portfolio/landscape/landscape1.jpg");
+        } else if (srcIndex !== 32){ // Now check that the srcIndex is not the last picture in the section if ALL is not being displayed
+         // Add 1 to the index
+         let nextIndex = srcIndex + 1;
+         // Now we can create the element for the next image
+         let nextPic = "https://royzinkyphotography.neocities.org/pictures/portfolio/wildlife/wildlife" + nextIndex + ".jpg";
+         // Then pass it to openFullImg() function
+         openFullImg(nextPic);
+        }
+      } else if (srcText.startsWith("https://royzinkyphotography.neocities.org/pictures/portfolio/landscape/landscape")){
+        // First, if the ALL section is being displayed then cycle past wildlife to the next section, landscape
+        if ((allButton.style.fontWeight === "bolder") && (srcIndex === 23)){
+           openFullImg("https://royzinkyphotography.neocities.org/pictures/portfolio/architectural/architectural1.jpg");
+        } else if (srcIndex !== 23){ // Now check that the srcIndex is not the last picture in the section if ALL is not being displayed
+         // Add 1 to the index
+         let nextIndex = srcIndex + 1;
+         // Now we can create the element for the next image
+         let nextPic = "https://royzinkyphotography.neocities.org/pictures/portfolio/landscape/landscape" + nextIndex + ".jpg";
+         // Then pass it to openFullImg() function
+         openFullImg(nextPic);
+        }
+      } else if (srcText.startsWith("https://royzinkyphotography.neocities.org/pictures/portfolio/architectural/architectural")){
+        // First, if the ALL section is being displayed then cycle past wildlife to the next section, landscape
+        if ((allButton.style.fontWeight === "bolder") && (srcIndex === 10)){
+           openFullImg("https://royzinkyphotography.neocities.org/pictures/portfolio/macro/macro1.jpg");
+        } else if (srcIndex !== 10){ // Now check that the srcIndex is not the last picture in the section if ALL is not being displayed
+         // Add 1 to the index
+         let nextIndex = srcIndex + 1;
+         // Now we can create the element for the next image
+         let nextPic = "https://royzinkyphotography.neocities.org/pictures/portfolio/architectural/architectural" + nextIndex + ".jpg";
+         // Then pass it to openFullImg() function
+         openFullImg(nextPic);
+        }
+      } else if (srcText.startsWith("https://royzinkyphotography.neocities.org/pictures/portfolio/macro/macro")){
+         if (srcIndex !== 5){ // Now check that the srcIndex is not the last picture in the section if ALL is not being displayed
+         // Add 1 to the index
+         let nextIndex = srcIndex + 1;
+         // Now we can create the element for the next image
+         let nextPic = "https://royzinkyphotography.neocities.org/pictures/portfolio/macro/macro" + nextIndex + ".jpg";
+         // Then pass it to openFullImg() function
+         openFullImg(nextPic);
+        }
+      }
+    }
+    
+    function previousImg(){
+      // Find the current opened image and it's SRC - fullscreenImage which is already declared when the image is first clicked
+      // Check if the image type is wildlife, landscape, architectural, or macro
+      let srcText = fullscreenImage.src;
+      // Find the number index from the src, which will be the picture number
+      // Use regular expressions to find all the digits in the string. The return here is an "object".
+      let srcIndexArray = srcText.match(/\d+/);
+      // Now convert this "object" to a number
+      let srcIndex = parseInt(srcIndexArray);
+      if (srcText.startsWith("https://royzinkyphotography.neocities.org/pictures/portfolio/wildlife/wildlife")){
+        // Now check that the srcIndex is not the last picture in the section
+        if (srcIndex !== 1){
+         // Subtract 1 from the index
+         let nextIndex = srcIndex - 1;
+         // Now we can create the element for the next image
+         let nextPic = "https://royzinkyphotography.neocities.org/pictures/portfolio/wildlife/wildlife" + nextIndex + ".jpg";
+         // Then pass it to openFullImg() function
+         openFullImg(nextPic);
+        }
+      } else if (srcText.startsWith("https://royzinkyphotography.neocities.org/pictures/portfolio/landscape/landscape")){
+        // First, if the ALL section is being displayed then cycle before landscape to the previous section, wildlife
+        if ((allButton.style.fontWeight === "bolder") && (srcIndex === 1)){
+           openFullImg("https://royzinkyphotography.neocities.org/pictures/portfolio/wildlife/wildlife32.jpg");
+        } else if (srcIndex !== 1){
+         // Subtract 1 from the index
+         let nextIndex = srcIndex - 1;
+         // Now we can create the element for the next image
+         let nextPic = "https://royzinkyphotography.neocities.org/pictures/portfolio/landscape/landscape" + nextIndex + ".jpg";
+         // Then pass it to openFullImg() function
+         openFullImg(nextPic);
+        }
+      } else if (srcText.startsWith("https://royzinkyphotography.neocities.org/pictures/portfolio/architectural/architectural")){
+        // First, if the ALL section is being displayed then cycle before architectural to the previous section, landscape
+        if ((allButton.style.fontWeight === "bolder") && (srcIndex === 1)){
+           openFullImg("https://royzinkyphotography.neocities.org/pictures/portfolio/landscape/landscape23.jpg");
+        } else if (srcIndex !== 1){
+         // Subtract 1 from the index
+         let nextIndex = srcIndex - 1;
+         // Now we can create the element for the next image
+         let nextPic = "https://royzinkyphotography.neocities.org/pictures/portfolio/architectural/architectural" + nextIndex + ".jpg";
+         // Then pass it to openFullImg() function
+         openFullImg(nextPic);
+        }
+      } else if (srcText.startsWith("https://royzinkyphotography.neocities.org/pictures/portfolio/macro/macro")){
+        // First, if the ALL section is being displayed then cycle before macro to the previous section, architectural
+        if ((allButton.style.fontWeight === "bolder") && (srcIndex === 1)){
+           openFullImg("https://royzinkyphotography.neocities.org/pictures/portfolio/architectural/architectural10.jpg");
+        } else if (srcIndex !== 1){
+         // Subtract 1 from the index
+         let nextIndex = srcIndex - 1;
+         // Now we can create the element for the next image
+         let nextPic = "https://royzinkyphotography.neocities.org/pictures/portfolio/macro/macro" + nextIndex + ".jpg";
+         // Then pass it to openFullImg() function
+         openFullImg(nextPic);
+        }
+      }
+    }
+    
+    // This event will trigger if the user clicks the mouse anywhere outside of the fullsized figure (picture and sliders) to close it
+    document.addEventListener("mousedown", (event) => {
+      if (fullscreenImageBox.style.display !== "none" && (fullscreenImage.contains(event.target) || leftSlider === event.target || rightSlider === event.target)) {
+        return;
+      } else {
+        closeFullImg();
+      }
+    });
+
+    // Java script for the different sections of the image gallery
+
+    function hideAll(){
+      allGallery.forEach(image => {
+      image.style.display = "none";
+     });
+     
+     // Remove bold from all classes using it (this will only be the section headers)
+     document.querySelectorAll('.portfolio-buttons span').forEach(element => {
+       element.style.fontWeight = "normal";
+       element.style.textDecoration = "none";
+     });
+    } 
+    
+    function showAll(){      
+      hideAll();
+      allGallery.forEach(image => {
+      image.style.display = "block";
+     });
+    } 
+    
+    function showWildlife(){
+      hideAll();
+      wildlifeGallery.forEach(image => {
+      image.style.display = "block";
+     });
+    }
+    
+    function showLandscape(){
+      hideAll();
+      landscapeGallery.forEach(image => {
+      image.style.display = "block";
+     });
+    }
+    
+    function showArchitectural(){
+      hideAll();
+      architecturalGallery.forEach(image => {
+      image.style.display = "block";
+     });
+    }
+    
+    function showMacro(){
+      hideAll();
+      macroGallery.forEach(image => {
+      image.style.display = "block";
+     });
+    } 
+    
+    // Bold function
+    function bold(){
+      const clickedElement = event.target;
+      clickedElement.style.fontWeight = "bolder";
+      clickedElement.style.textDecoration = "underline";
+    }
+    </script>
+    
+    <!-- Java script section for Preloader 
+    <script>
+    var loader = document.getElementById("preloader");
+    
+    window.addEventListener("load", function() {
+      // Delay the action of loader disappearing using setTimeout function
+      setTimeout(function() {
+      loader.style.display = "none";
+      }, 3000);
+    })
+    </script> -->
+    
+  </body>
+</html>
+

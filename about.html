@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- The following meta lines help to make the website responsive - so the website is properly scaled amongst different devices. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roy Zinky Photography</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link rel="stylesheet" href="style.css">
+    <!-- if the previous line does not work try to use <link href="/style.css" rel="stylesheet" type="text/css" media="all"> -->
+    
+    <!-- for google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Akshar:wght@600&display=swap">
+    
+    <!-- for awesome font logos -->
+    <script src="https://use.fontawesome.com/23ae4c78b2.js"></script>
+    
+    <!-- share button -->
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=64dfc59c4265f4001221c8c2&product=inline-share-buttons' async='async'></script>    
+    
+  </head>
+  <body>
+  <!-- ******************* PRELOADER ANIMATION ******************* -->
+  
+  <!-- <div id="preloader"></div> -->
+  
+  <!-- ******************* HEADER ******************* -->
+      <section class="alt-header">
+        <!-- Nav tag defines a set of navigation links, which we can use for the tabs -->
+        <nav>
+          <!-- We will create a div class for all the tab links so we can link them all to a CSS style called tab-links -->
+          <div class="tab-links" id="tabLinks">
+            <!-- closing icon for small screen tabs, with a call to function closeMenu for click event  -->
+            <i class="fa fa-times" onclick="closeMenu()"></i>
+            <!-- ul tag is for an unordered bulleted list, adding <li> tag gives just an unordered list -->
+            <ul>
+              <li><a href="https://royzinkyphotography.neocities.org/">HOME</a></li>
+              <li><a href="https://royzinkyphotography.neocities.org/portfolio">PORTFOLIO</a></li>
+              <li><a href="https://royzinkyphotography.neocities.org/about">ABOUT</a></li>
+              <li><a href="https://royzinkyphotography.neocities.org/contact">CONTACT</a></li>
+            </ul>
+          </div>
+            <!-- opening menu icon for small screen tabs, with a call to function openMenu for click event -->
+            <i class="fa fa-bars" onclick="openMenu()"></i>
+        </nav>
+      
+        <div class="main-header-text">
+          <h1>ROY ZINKY PHOTOGRAPHY</h1>
+          <p>framing artistry in the wild</p>
+        </div>
+      
+      </section>
+      
+  <!-- ******************* ABOUT SECTION ******************* -->
+    
+    <section class="about-section">
+      
+      <div class="center">
+        
+        <img src="pictures/bioPicture2.jpg">
+        
+        <img id="offsetPic" src="pictures/bioPicture2.jpg">
+        
+        <div class="bio-paragraph">
+        <h1>ABOUT ME</h1>
+        <p>My name is Roy Zinky, a traveling wildlife photographer capturing animals around the U.S. <br /> <br /> I find comfort in the silence and excitement behind the lens; capturing wild animals is what I love to do. <br /> <br /> It's not about the photo, but the mind space I find myself entering when deep in the wilderness- and the love for seeing what others overlook. <br /> <br /> I strive to capture beautiful photos of even the most mundane of animals, and share my work and the animals I have been lucky enough to capture.</p>
+        </div>
+      </div>
+        
+    </section>
+    
+  <!-- ******************* FOOTER ******************* -->
+     <section class="footer">
+     
+     <div class="footer-top">
+      <h1>ROY ZINKY</h1>
+      <h2><i class="fa fa-minus"></i></h2>
+      <p>WILDLIFE PHOTOGRAPHER</p>
+      <hr>
+     </div>
+     
+     
+     <div class="social-header">
+        <h1>CHECK OUT MY SOCIALS</h1>
+      </div>
+     
+     <div class="socials">
+        <ul>
+          <li><a href="https://www.instagram.com/itsroyzinky/"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.youtube.com/@ItsRoyZinky"><i class="fa fa-youtube-play"></i></a> </li>
+          <li><div class="st-custom-button" data-network="sharethis"><i class="fa fa-share-alt-square"></i></div></li>
+        </ul>
+     </div>
+
+     <div class="footer-bottom">
+      <p>2023 <br /> Website designed and coded by Breanna Zinky <br /> using HTML, CSS, and JavaScript</p>
+     </div>
+     
+     </section>
+    
+    
+    <!-- ******************* JAVA SCRIPT ******************* -->
+    <!-- Java script section for Tabs Menu -->
+    <script>
+    // create variable for tab links
+      var tabLinks = document.getElementById("tabLinks");
+      
+      // Sets the position of the menu to normal so it is shown
+     function openMenu(){
+        tabLinks.style.right = "0";
+        }
+      // Sets the position of the menu to off the screen so it is hidden
+      function closeMenu(){
+        tabLinks.style.right = "-200px";
+        }
+    </script>
+        
+      <!-- Java script section for Header Transition (shrinking) -->
+    <script>
+      // Event takes place after the website is fully loaded
+      document.addEventListener("DOMContentLoaded", function() {
+      // Create a variable (reference to) the header HTML element
+      var altHeader = document.querySelector(".alt-header");
+      // setTimeout function delays the event
+      setTimeout(function() {
+      // Adds the "shorter" class to the altHeader element, which will have changed properties, so the header changes
+      altHeader.classList.add("shorter");
+      }, 1500); // Delay time of 1500 miliseconds
+      });
+    </script>
+    
+    <!-- Java script section for Preloader
+    <script>
+    var loader = document.getElementById("preloader");
+    
+    window.addEventListener("load", function() {
+      // Delay the action of loader disappearing using setTimeout function
+      setTimeout(function() {
+      loader.style.display = "none";
+      }, 3000);
+    })
+    </script>  -->
+    
+  </body>
+</html>
